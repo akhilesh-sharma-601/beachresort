@@ -28,6 +28,6 @@ Room.propTypes = {
     name: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
-    name: PropTypes.arrayOf.isRequired,
+    images: PropTypes.arrayOf(PropTypes.string).isRequired,
   }),
 };
