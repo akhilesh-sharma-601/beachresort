@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import items from "./data";
 const RoomContext = React.createContext();
-//<RoomContext.Provider value={"hello"}/>
+
 
 class RoomProvider extends Component {
   state = {
@@ -9,6 +9,15 @@ class RoomProvider extends Component {
     sortedRooms: [],
     featuredRooms: [],
     loading: true,
+    type: "all",
+    capacity: 1,
+    price: 0,
+    minPrice: 0,
+    maxPrice: 0,
+    minSize: 0,
+    maxSize: 0,
+    breakfast: false,
+    pets: false
   };
   //getData =()=>{}
 
@@ -20,10 +29,11 @@ class RoomProvider extends Component {
     })
     //console.log(rooms);
   }
+   
   formatData(items) {
     let tempitems = items.map((item) => {
       let id = item.sys.id;
-      let images = item.fields.images.map((image) =>
+      let images = item.fields.images.map(image =>
        image.fields.file.url);
     
     let room  = {...item.fields,images,id}
@@ -34,6 +44,7 @@ class RoomProvider extends Component {
 getRoom=(slug)=>{
   let tempRooms=[...this.state.rooms]
   const room =tempRooms.find(room=>room.slug===slug)
+  return room;
 }
   render() {
     return (
