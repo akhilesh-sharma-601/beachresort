@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +11,7 @@
 }
 :root {
   --primaryColor: #af9a7d;
+  /* --primaryColor: #4bf1e4; */
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -64,6 +71,8 @@ h6 {
   transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
+  border-radius: 10px;
+  color: rgb(238, 235, 235);
 }
 .btn-primary:hover {
   background: transparent;
@@ -96,6 +105,7 @@ h6 {
   padding: 0.75rem 2rem;
   background: var(--offWhite);
   z-index: 1;
+  /* font-family: 'Pacifico', cursive; */
 }
 .nav-header {
   display: flex;
@@ -159,13 +169,14 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
+  background: url("./images/defaultBcg2.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 .roomsHero {
-  background-image: url("./images/room-2.jpeg");
+  background-image: url("./images/room-4.jpeg");
   min-height: 60vh;
 }
 /* End of Hero */
@@ -181,6 +192,7 @@ h6 {
 }
 .banner h1 {
   font-size: 2.5rem;
+  font-family: 'Kaushan Script', cursive
 }
 .banner div {
   width: 10rem;
@@ -189,8 +201,9 @@ h6 {
   margin: 1.7rem auto;
 }
 .banner p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
+  font-family: 'Damion', cursive;
 }
 @media screen and (min-width: 576px) {
   .banner {
@@ -213,6 +226,9 @@ h6 {
 .section-title {
   text-align: center;
   margin-bottom: 4rem;
+  font-family: 'Sacramento', cursive;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
 }
 .section-title h4 {
   font-size: 2rem;
@@ -231,6 +247,7 @@ h6 {
 /* services */
 .services {
   padding: 5rem 0;
+  /* font-family: 'Pacifico', cursive; */
 }
 .services {
   background: var(--darkGrey);
@@ -252,6 +269,7 @@ h6 {
 }
 .services h6 {
   letter-spacing: var(--mainSpacing);
+  
 }
 .services p {
   width: 80%;
@@ -316,11 +334,12 @@ h6 {
 .price-top {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   background: rgba(0, 0, 0, 0.8);
   color: var(--mainWhite);
   padding: 0.3rem 0.6rem 0.5rem;
   border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   font-size: 0.5rem;
   text-align: center;
   transition: var(--mainTransition);
@@ -357,6 +376,9 @@ h6 {
   text-align: center;
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
+  /* font-family: 'Pacifico', cursive; */
+  /* font-family: calibri; */
+  
 }
 /* end of room  */
 /* single room*/
@@ -421,7 +443,7 @@ h6 {
   .single-room-images,
   .single-room-info,
   .room-extras {
-    width: 95vw;
+    width: 80vw;
     max-width: 1170px;
   }
   .single-room-info {
