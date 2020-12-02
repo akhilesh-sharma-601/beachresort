@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 :root {
-  --primaryColor: #af9a7d;
+  --primaryColor: #b87c2f;
   /* --primaryColor: #4bf1e4; */
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
@@ -106,6 +106,7 @@ h6 {
   background: var(--offWhite);
   z-index: 1;
   /* font-family: 'Pacifico', cursive; */
+ 
 }
 .nav-header {
   display: flex;
@@ -137,9 +138,13 @@ h6 {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: var(--mainSpacing);
+  margin: 0 15px;
+  text-align: center;
 }
 .nav-links a:hover {
   color: var(--primaryColor);
+  background: #222;
+  padding: 10px;
 }
 
 .show-nav {
